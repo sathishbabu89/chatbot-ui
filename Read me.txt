@@ -1,0 +1,26 @@
+1. In Visual Studio Code, click on File > Open Folder....
+Select the folder you just created
+
+2. Create a Virtual Environment:
+
+Open the terminal in Visual Studio Code by selecting Terminal > New Terminal.
+
+python -m venv my_env
+
+.\my_env\Scripts\activate
+
+Install Required Dependencies
+
+	pip install flask spacy transformers pypdf
+	python -m spacy download en_core_web_sm
+	pip install tensorflow
+	pip install tf-keras
+
+After installing dependencies, re-run your application:
+
+python app.py
+
+
+Access the Application
+Open your web browser and go to http://127.0.0.1:5000/. 
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Ask Questions</h1>
+        <form id="question-form" method="POST">
+            <input type="text" id="question" name="question" placeholder="Type your question here..." required>
+            <button type="submit">Ask</button>
+        </form>
+        <div id="response">
+            {% if answer %}
+            <p><strong>Answer:</strong> {{ answer }}</p>
+            {% endif %}
+        </div>
+        <a href="/">Upload a new PDF</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+MyChatbot/
+│
+├── static/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   └── uploads/
+│
+├── templates/
+│   ├── upload.html
+│   └── chatbot.html
+│
+├── app.py
+└── requirements.txt
